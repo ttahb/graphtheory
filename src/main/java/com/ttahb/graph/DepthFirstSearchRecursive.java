@@ -6,19 +6,19 @@ import java.util.stream.Stream;
 
 /**
  * Graph with adjacency list representation.
+ *
  * @author bhattvijay69@hotmail.com
  */
-public class Graph {
+public class DepthFirstSearchRecursive {
 
     private final List<ArrayList<Integer>> adjacencyList;
     private final List<Integer> traversed = new ArrayList<>();
     private final boolean[] visited;
 
     /**
-     *
      * @param n - number of nodes.
      */
-    public Graph(int n){
+    public DepthFirstSearchRecursive(int n) {
         // using Streams to generate a list of list [[],[],[],[],[]] based on V passed.
         adjacencyList = Stream.generate(ArrayList<Integer>::new).limit(n).toList();
         visited = new boolean[n];
@@ -26,20 +26,22 @@ public class Graph {
 
     /**
      * Each edge needs to be added only once.
+     *
      * @param n1 - node1
      * @param n2 - node2
      */
-    public void addEdge(int n1, int n2){
+    public void addEdge(int n1, int n2) {
         adjacencyList.get(n1).add(n2);
         adjacencyList.get(n2).add(n1);
     }
 
     /**
      * Recursively traverse an undirected unweighted graph
+     *
      * @param node - node to start traversal with
      */
-    public void depthFirstSearchRecursive(int node){
-        if(visited[node])
+    public void depthFirstSearchRecursive(int node) {
+        if (visited[node])
             return;
         visited[node] = true;
         traversed.add(node);
@@ -49,9 +51,10 @@ public class Graph {
 
     /**
      * Returns traversed list
+     *
      * @return - traversed
      */
-    public List<Integer> getTraversed(){
+    public List<Integer> getTraversed() {
         return traversed;
     }
 

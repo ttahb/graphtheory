@@ -1,18 +1,16 @@
 package com.ttahb.graph;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class GraphTest {
+public class DepthFirstSearchRecursiveTest {
 
     @Test
     public void testDFS(){
-        Graph graph = new Graph(12);
+        DepthFirstSearchRecursive graph = new DepthFirstSearchRecursive(12);
 
         graph.addEdge(0,1);
         graph.addEdge(0,9);
