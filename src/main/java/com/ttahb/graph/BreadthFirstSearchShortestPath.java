@@ -25,11 +25,25 @@ public class BreadthFirstSearchShortestPath {
         visited = new boolean[v];
     }
 
+    /**
+     * Adds edges for an undirected, unweighted graph, however this algorithm can be used for a directed graph.
+     * For directed, graph comment the second line below to add edge only in one direction from v to w.
+     *
+     * @param v
+     * @param w
+     */
     public void addEdge(int v, int w) {
         adjList.get(v).add(w);
-        adjList.get(w).add(v);
+        adjList.get(w).add(v); // comment this for directed graph.
     }
 
+    /**
+     * Finds the shortest path in an unweighted graph.
+     *
+     * @param start - node to start path at  < n - number of vertices
+     * @param end   - node to reach - >= 0
+     * @return - It returns one of the shortest path, there could be other combinations. but number of edges will be same.
+     */
     public List<Integer> findShortestPath(int start, int end) {
 
         if (start < adjList.size() && end >= 0) {
