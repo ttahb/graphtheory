@@ -8,6 +8,10 @@ import java.util.Queue;
  * - You are trapped in a 2D dungeon and need to find the quickest way out! The dungeon may or may not be filled with rock.
  *   It takes one minute to move out one unit North, South, East, West. You cannot move diagonally and the maze is surrounded
  *   by rocks on all sides. Is an escape possible, if yes, how long will it take?
+ *   # - represents the cells filled with rocks
+ *   E - represents the exit
+ *   sr - starting position's row index
+ *   sc - startting position's column index
  * @author - bhattvijay69@hotmail.com
  */
 public class DungeonProblemUsingBFS {
@@ -15,8 +19,12 @@ public class DungeonProblemUsingBFS {
 
     /** Using an adjacency matrix to represent a 2D dungeon. */
     private final int[][] adjMatrix;
+    /** Total number or rows in the dungeon. */
     private final int R;
+
+    /** Total number of column in the dungeon */
     private final int C;
+
     private final boolean[][] visited;
     private final Queue<Integer> xq;
     private final Queue<Integer> yq;
