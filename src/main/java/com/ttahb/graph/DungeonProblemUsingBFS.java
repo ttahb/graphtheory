@@ -94,9 +94,10 @@ public class DungeonProblemUsingBFS {
      */
     private void exploreNeighbouringCubes(int r, int c) {
 
-        int[] dr = {-1,1,0,0};
-        int[] dc = {0,0,1,-1};
+        int[] dr = {-1,1,0,0};   // Array to represent N,S,E,W direction for a row, row can move only North(-1), South(+1) in a matrix.
+        int[] dc = {0,0,1,-1};   // Similarly for a column East(+1), West(-1).
 
+        // Iterating all four direction meanwhile avoiding already visited ones, cells with rocks.
         for(int i=0; i<4; i++){
 
             int rr = r + dr[i];
