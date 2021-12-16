@@ -31,6 +31,8 @@ public class TreeIsomorphism {
             TreeNode rootedTree2 = new RootingATree(tree2.size()).rootTree(tree2, center);
             String encodedTree2 = encode(rootedTree2);
             if(encodedTree1.equals(encodedTree2)){
+                //System.out.println(encodedTree1);
+                //System.out.println(encodedTree2);
                 return true;
             }
         }
