@@ -32,7 +32,11 @@ public class CenterOfATree {
         adjList.get(v).add(u);
     }
 
-    public List<Integer> findTreeCenters(){
+    public List<ArrayList<Integer>> getAdjList(){
+        return this.adjList;
+    }
+
+    public List<Integer> findTreeCenters(List<ArrayList<Integer>> adjList){
         int n = adjList.size();
         List<Integer> leaves = new ArrayList<>();
         int[] degrees = new int[n];

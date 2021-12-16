@@ -23,7 +23,7 @@ public class CenterOfATreeTest {
         centerOfATree.addEdge(6,7);
         centerOfATree.addEdge(6,8);
 
-        assertEquals(Arrays.asList(2),centerOfATree.findTreeCenters());
+        assertEquals(Arrays.asList(2),centerOfATree.findTreeCenters(centerOfATree.getAdjList()));
         // 2 is the center of the tree.
     }
 
@@ -37,7 +37,7 @@ public class CenterOfATreeTest {
         centerOfATree.addEdge(2,4);
         centerOfATree.addEdge(2,3);
 
-        assertEquals(Arrays.asList(2,1),centerOfATree.findTreeCenters());
+        assertEquals(Arrays.asList(2,1),centerOfATree.findTreeCenters(centerOfATree.getAdjList()));
         // 2,1 are the centers of the tree.
     }
 }
