@@ -14,7 +14,7 @@ public class TopologicalSortTest {
 
     @Test
     public void testTopologicalSort(){
-        
+
         TopologicalSort topSort = new TopologicalSort(9);
         topSort.addDirectedEdge(8,1);
         topSort.addDirectedEdge(8,3);
