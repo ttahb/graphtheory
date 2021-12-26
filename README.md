@@ -12,6 +12,7 @@ Implementation of well-known Graph theory algorithms & their applications in Jav
 - [Tree Isomorphism - Whether two trees given as undirected graphs, are structurally same - AHO Algorithm used for encoding](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/TreeIsomorphism.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/TreeIsomorphismTest.java)
 - [Topological Sort - Using DFS Recursion](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/TopologicalSort.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/TopologicalSortTest.java)
 - [Single Source Shortest Path - Using topological sort with Directed Acyclic Weighted Graph (DAG)](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/DAGSingleSourceShortestPathUsingTopSort.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/DAGSingleSourceShortestPathUsingTopSortTest.java)
+- [Single Source Shortest Path - Dijkstra's Lazy Approach Using Priority Queue - Non-negative weights (DAG)](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/DijkstraLazyUsingPQ.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/DijkstraLazyUsingPQTest.java)
 - # Pre-requisite for running algorithms.
 - JDK16+ ( but with minute modifications can be run in JDK8+)
 - Build Tool - Maven
