@@ -13,6 +13,7 @@ Implementation of well-known Graph theory algorithms & their applications in Jav
 - [Topological Sort - Using DFS Recursion](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/TopologicalSort.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/TopologicalSortTest.java)
 - [Single Source Shortest Path - Using topological sort with Directed Acyclic Weighted Graph (DAG)](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/DAGSingleSourceShortestPathUsingTopSort.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/DAGSingleSourceShortestPathUsingTopSortTest.java)
 - [Single Source Shortest Path - Dijkstra's Lazy Approach Using Priority Queue - Non-negative weights (DAG)](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/DijkstraLazyUsingPQ.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/DijkstraLazyUsingPQTest.java)
+- [Min Heap based Priority Queue](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/DomesticPQ.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/TestDomesticPQ.java)
 - # Pre-requisite for running algorithms.
 - JDK16+ ( but with minute modifications can be run in JDK8+)
 - Build Tool - Maven
