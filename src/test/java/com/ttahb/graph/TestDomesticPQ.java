@@ -27,7 +27,7 @@ public class TestDomesticPQ {
      *             /  \               /  \
      *            7    9    = >      2    3
      *           / \   / \          / \   /  \
-     *          5   2  8  10        5   7  8   9
+     *          5   2  8  1        5   7  8   9
      */
     @Test
     public void testHeapify(){
@@ -61,8 +61,8 @@ public class TestDomesticPQ {
     @Test
     public void testDelete(){
         DomesticPQ domesticPQ = new DomesticPQ(testArray);
-        assertTrue(domesticPQ.delete(3));
-        assertEquals(Arrays.asList(1,2,8,5,7,9),domesticPQ.getHeap());
+        assertTrue(domesticPQ.delete(2));
+        assertEquals(Arrays.asList(1,5,3,9,7,8),domesticPQ.getHeap());
     }
 
 
