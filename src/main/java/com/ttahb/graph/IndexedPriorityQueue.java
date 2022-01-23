@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- * An integer key-indexed based priority queue where values can comparable such as Integer, String etc. Values in this
+ * An integer key-indexed based priority queue with comparable values such as Integer, String etc. Values in this
  * priority queue determines the priority and can be updated dynamically. We can also insert, delete, poll, peek and
  * increase or decrease key. Poll takes O(1) time whereas insert, delete or update takes O(log(n)) time.
  * Key-index (ki) is within [0,heapSize)  heapSize - size of the heap.
