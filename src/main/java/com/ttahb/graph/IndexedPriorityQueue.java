@@ -135,9 +135,9 @@ public class IndexedPriorityQueue<T extends Comparable<T>> implements Iterable<T
         keyExistsOrThrow(ki);
         valueNotNullOrThrow(value);
         if(values[ki].compareTo(value) == 0)
-            throw new IllegalArgumentException("calling increaseValue() with value equal to specified key index.");
+            throw new IllegalArgumentException("calling decreaseValue() with value equal to specified key index.");
         if(values[ki].compareTo(value) < 0)
-            throw new IllegalArgumentException("calling increaseValue() with value strictly greater than value at specified key-index");
+            throw new IllegalArgumentException("calling decreaseValue() with value strictly greater than value at specified key-index");
         values[ki] = value;
         swim(ki);
     }
