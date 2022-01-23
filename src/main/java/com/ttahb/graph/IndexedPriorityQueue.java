@@ -238,6 +238,11 @@ public class IndexedPriorityQueue<T extends Comparable<T>> implements Iterable<T
         return heapSize == 0;
     }
 
+    public T valueOf(int ki){
+        keyExistsOrThrow(ki);
+        return values[ki];
+    }
+
     /**
      * Returns an iterator that iterates over the values in priority queue in ascending order.
      * The iterator doesn't support remove operation.
