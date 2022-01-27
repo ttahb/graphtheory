@@ -113,8 +113,9 @@ public class IndexedPriorityQueue<T extends Comparable<T>> implements Iterable<T
         keyExistsOrThrow(ki);
         T oldValue = values[ki];
         values[ki] = value;
-        swim(ki);
-        sink(ki);
+        int i = pm[ki];
+        swim(i);
+        sink(i);
         return oldValue;
     }
 
@@ -127,7 +128,7 @@ public class IndexedPriorityQueue<T extends Comparable<T>> implements Iterable<T
         if(values[ki].compareTo(value) > 0)
             throw new IllegalArgumentException("calling increaseValue() with value strictly less than value at specified key-index");
         values[ki] = value;
-        sink(ki);
+        sink(pm[ki]);
     }
 
     /** Decrease the value associated with key-index ki to the specified value. */
@@ -139,7 +140,7 @@ public class IndexedPriorityQueue<T extends Comparable<T>> implements Iterable<T
         if(values[ki].compareTo(value) < 0)
             throw new IllegalArgumentException("calling decreaseValue() with value strictly greater than value at specified key-index");
         values[ki] = value;
-        swim(ki);
+        swim(pm[ki]);
     }
 
 
@@ -225,7 +226,7 @@ public class IndexedPriorityQueue<T extends Comparable<T>> implements Iterable<T
      * @param ki - key index passed by the user.
      * @return - true or false
      */
-    private boolean contains(int ki) {
+    public boolean contains(int ki) {
         if(ki < 0)
             throw new IllegalArgumentException("index is negative: "+ki);
         if(ki >= maxSize)
