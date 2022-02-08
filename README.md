@@ -16,6 +16,7 @@ Implementation of well-known Graph theory algorithms & their applications in Jav
 - [Min Heap based Priority Queue](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/DomesticPQ.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/TestDomesticPQ.java)
 - [Min Heap based Indexed Priority Queue](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/IndexedPriorityQueue.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/TestIndexedPriorityQueue.java)
 - [Single Source Shortest Path - Dijkstra's Eager Approach - Uses Indexed Priority Queue - Non-Negative Weights (DAG)](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/DijkstraEagerApproach.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/TestDijkstraEagerApproach.java)
+- [Single Source Shortest Path - Bellman Ford -Edge List Representation - Works for Negative Weights, Detects Negative Cycle (DAG)](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/BellmanFordAlgorithm.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/BellmanFordAlgorithmTest.java)
 - # Pre-requisite for running algorithms.
 - JDK16+ ( but with minute modifications can be run in JDK8+)
 - Build Tool - Maven
