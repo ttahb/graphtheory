@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 public class FindArticulationPointsTest {
-    
+
     @Test
     public void testArticulationPoints(){
         FindArticulationPoints findArticulationPoints = new FindArticulationPoints(9);
