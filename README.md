@@ -20,6 +20,7 @@ Implementation of well-known Graph theory algorithms & their applications in Jav
 - [All Pair Shortest Path - Floyd Warshall Algorithm With Path Reconstruction, Detects and Propogates Vertices in the Negative Cycle](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/FloydWarshallAPSP.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/FloydWarshalAPSPTest.java)
 - [Find Bridges or cut edge in a graph with Adj List](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/FindBridgesAlgorithm.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/FindBridgesAlgorithmTest.java)
 - [Find Articulation Point in a graph](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/FindArticulationPoints.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/FindArticulationPointsTest.java)
+- [Find Strongly Connected Components in Directed Graph - Tarjans Algorithm](https://github.com/ttahb/graphtheory/blob/master/src/main/java/com/ttahb/graph/TarjanAlgorithmSCC.java) --> [TestCase](https://github.com/ttahb/graphtheory/blob/master/src/test/java/com/ttahb/graph/TarjanAlgorithmSCCTest.java )
 - # Pre-requisite for running algorithms.
 - JDK16+ ( but with minute modifications can be run in JDK8+)
 - Build Tool - Maven
